@@ -12,10 +12,14 @@ debezium: runs the Debezium SQL Server Connector
 
 To start the services, run:
 
-'''sh
+```
 docker-compose up -d
-This will start all the services in the background. To stop them, run:
-'''
+```
 
+This will start all the services in the background. To stop them, run:
+
+```
 docker-compose down
+```
+
 You can now use the Debezium SQL Server Connector to capture data changes from your SQL Server database by sending configuration requests to the debezium service running on port 8083.
